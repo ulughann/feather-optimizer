@@ -1,0 +1,17 @@
+{
+  "name": "feather-optimizer",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nw src/",
+    "prod": "nwbuild --platforms win64 --buildDir dist/ src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nw": "^0.70.1"
+  }
+}

@@ -1,0 +1,280 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1F2027;
+    font-weight: 300;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+h1 { color: rgb(236, 230, 230); font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin: auto; text-align: center; }
+
+h2 { padding-top: 5px; color: rgb(255, 255, 255); font-family: 'Helvetica Neue', sans-serif; font-size: 35px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin: auto; text-align: center; }
+h3 { padding-top: 10px; color: rgb(255, 255, 255); font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin: auto; text-align: center; float:none  ; }
+
+.bn40 {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: large;
+    padding: 6px;
+    color: #fff !important;
+  }
+  
+  .bn40::after {
+    max-width: 100%;
+    height: 2px;
+    display: block;
+    content: "";
+    background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+    opacity: 1;
+    margin-bottom: -6px;
+    margin-top: 1px;
+  }
+  .settings {
+    position: relative;
+    margin: 30px;
+    height: auto;
+    widows: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+ }
+  .settings .setting {
+    position: relative;
+    width: 100%;
+    height: calc(65px - 10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    color: #fff;
+    margin-bottom: 8px;
+ 
+  }
+
+  button{
+    margin-top: 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 6px;
+    background-color:#5b906b3f;
+    border:#5b906b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size:20px;
+  }
+  .download:hover{
+    transition: 0.3s;
+    border: 1px, solid #9e968383;
+    transform: translate3d(0, 0, 3);
+    color: white;
+    transform: scale(1.05);
+  }
+  download:hover:after {
+    opacity: 1;
+    right: 15px;
+  }
+
+  .small {
+    height: 180px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 30px;
+    border-width: 4px;
+  }
+
+  .image {
+    display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-right: auto
+  }
+
+  .big1 {
+    height: 280px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 4px;
+  }
+
+  .image2 {
+    display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-right: auto
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Oxygen:700&display=swap");
+ .about {
+	 position: fixed;
+	 z-index: 10;
+	 bottom: 10px;
+	 right: 10px;
+	 width: 40px;
+	 height: 40px;
+	 display: flex;
+	 justify-content: flex-end;
+	 align-items: flex-end;
+	 transition: all 0.2s ease;
+}
+ .about .bg_links {
+	 width: 40px;
+	 height: 40px;
+	 border-radius: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background-color: rgba(0, 0, 0, 0.2);
+	 border-radius: 100%;
+	 backdrop-filter: blur(5px);
+	 position: absolute;
+}
+ .about .logo {
+	 width: 40px;
+	 height: 40px;
+	 z-index: 9;
+	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+	 background-size: 50%;
+	 background-repeat: no-repeat;
+	 background-position: 10px 7px;
+	 opacity: 0.9;
+	 transition: all 1s 0.2s ease;
+	 bottom: 0;
+	 right: 0;
+}
+ .about .social {
+	 opacity: 0;
+	 right: 0;
+	 bottom: 0;
+}
+ .about .social .icon {
+	 width: 100%;
+	 height: 100%;
+	 background-size: 20px;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-color: transparent;
+	 display: flex;
+	 transition: all 0.2s ease, background-color 0.4s ease;
+	 opacity: 0;
+	 border-radius: 100%;
+}
+ .about .social.portfolio {
+	 transition: all 0.8s ease;
+}
+ .about .social.portfolio .icon {
+	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+}
+ .about .social.dribbble {
+	 transition: all 0.3s ease;
+}
+ .about .social.dribbble .icon {
+	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+}
+ .about .social.linkedin {
+	 transition: all 0.8s ease;
+}
+ .about .social.linkedin .icon {
+	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+}
+ .about:hover {
+	 width: 105px;
+	 height: 105px;
+	 transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+ .about:hover .logo {
+	 opacity: 1;
+	 transition: all 0.6s ease;
+}
+ .about:hover .social {
+	 opacity: 1;
+}
+ .about:hover .social .icon {
+	 opacity: 0.9;
+}
+ .about:hover .social:hover {
+	 background-size: 28px;
+}
+ .about:hover .social:hover .icon {
+	 background-size: 65%;
+	 opacity: 1;
+}
+ .about:hover .social.portfolio {
+	 right: 0;
+	 bottom: calc(100% - 40px);
+	 transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+ .about:hover .social.portfolio .icon:hover {
+	 background-color: #698fb7;
+}
+ .about:hover .social.dribbble {
+	 bottom: 45%;
+	 right: 45%;
+	 transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+ .about:hover .social.dribbble .icon:hover {
+	 background-color: #ea4c89;
+}
+ .about:hover .social.linkedin {
+	 bottom: 0;
+	 right: calc(100% - 40px);
+	 transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+ .about:hover .social.linkedin .icon:hover {
+	 background-color: #0077b5;
+}
+ body {
+	 margin: 0;
+}
+ .content {
+	 width: 100%;
+	 height: 100vh;
+	 background-color: #171f30;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .content .loading {
+	 width: 80px;
+	 height: 50px;
+	 position: relative;
+}
+ .content .loading p {
+	 top: 0;
+	 padding: 0;
+	 margin: 0;
+	 color: #5389a6;
+	 font-family: "Oxygen", sans-serif;
+	 animation: text 3.5s ease both infinite;
+	 font-size: 12px;
+	 letter-spacing: 1px;
+}
+
+
+.bn59 {
+  background-color: #141414;
+  border: 1px solid rgba(54, 54, 54, 0.6);
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+  color: #fff;
+}

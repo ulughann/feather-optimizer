@@ -1,0 +1,181 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    background-color: #1F2027;
+    background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    overflow: hidden;
+    font-weight: 300;
+  }
+  h1 { color: rgb(236, 230, 230); font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin: auto; text-align: center; }
+  
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  .A {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer; }
+    input[type="checkbox"]:focus {
+      outline: 0; }
+  
+  .toggle {
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #474755;
+    background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+    transition: all .2s ease; }
+    .toggle:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+      transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35); }
+    .toggle:checked {
+      border-color: #654FEC; }
+      .toggle:checked:after {
+        transform: translatex(20px); }
+  
+  
+  
+  
+        
+        .settings {
+          position: relative;
+          margin: 30px;
+          height: auto;
+          widows: 100%;
+          width: 600px;
+          display: flex;
+          flex-direction: column;
+       }
+        .settings .setting {
+          position: relative;
+          width: 100%;
+          height: calc(65px - 10px);
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          padding: 10px 25px;
+          color: #fff;
+          margin-bottom: 8px;
+       }
+        .settings .setting input {
+          opacity: 0;
+          position: absolute;
+       }
+        .settings .setting input + label {
+          user-select: none;
+       }
+        .settings .setting input + label::before, .settings .setting input + label::after {
+          content: "";
+          position: absolute;
+          transition: 150ms cubic-bezier(0.24, 0, 0.5, 1);
+          transform: translateY(-50%);
+          top: 50%;
+          right: 10px;
+          cursor: pointer;
+       }
+        .settings .setting input + label::before {
+          height: 30px;
+          width: 50px;
+          border-radius: 30px;
+          background: rgba(214, 214, 214, 0.434);
+       }
+        .settings .setting input + label::after {
+          height: 24px;
+          width: 24px;
+          border-radius: 60px;
+          right: 32px;
+          background: #fff;
+       }
+        .settings .setting input:checked + label:before {
+          background: #5d68e2;
+          transition: all 150ms cubic-bezier(0, 0, 0, 0.1);
+       }
+        .settings .setting input:checked + label:after {
+          right: 14px;
+       }
+        .settings .setting input:focus + label:before {
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+       }
+        .settings .setting input:disabled + label:before, .settings .setting input:disabled + label:after {
+          cursor: not-allowed;
+       }
+        .settings .setting input:disabled + label:before {
+          background: #4f4f6a;
+       }
+        .settings .setting input:disabled + label:after {
+          background: #909090;
+       }
+  
+       .bn40 {
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: large;
+        padding: 6px;
+        color: #fff !important;
+      }
+      
+      .bn40::after {
+        max-width: 100%;
+        height: 2px;
+        display: block;
+        content: "";
+        background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+        opacity: 1;
+        margin-bottom: -6px;
+        margin-top: 1px;
+      }
+     
+      .bn59 {
+    background-color: #141414;
+    border: 1px solid rgba(54, 54, 54, 0.6);
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    color: #fff;
+  }
+
+  

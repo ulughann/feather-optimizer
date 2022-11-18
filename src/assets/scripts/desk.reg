@@ -1,0 +1,65 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\DesktopShortcuts]
+"MUIVerb"="Desktop Shortcuts"
+"SubCommands"="theme;wallpaper;scrnsavr;desktopicons;sound;cursor;DPI;color"
+"icon"="desk.cpl"
+"Position"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\theme]
+@="Change Theme"
+"icon"="imageres.dll,145"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\theme\command]
+@="control desk.cpl,,@themes"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\wallpaper]
+@="Change Wallpaper"
+"icon"="desk.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\wallpaper\command]
+@="control desk.cpl,,@desktop"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\scrnsavr]
+@="Change Screen Saver"
+"icon"="desk.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\scrnsavr\command]
+@="control desk.cpl,,1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\desktopicons]
+@="Change Desktop Icons Settings"
+"icon"="desk.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\desktopicons\command]
+@="control desk.cpl,,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sound]
+@="Change Sound Scheme"
+"icon"="mmsys.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sound\command]
+@="control mmsys.cpl,,2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cursor]
+@="Change Mouse Pointers"
+"icon"="main.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cursor\command]
+@="control main.cpl,,1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\DPI]
+@="Change DPI Scaling"
+"icon"="desk.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\DPI\command]
+@="dpiscaling"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\color]
+@="Change Window Color and Appearance"
+"icon"="desk.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\color\command]
+@="explorer shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\\1\\::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}\\pageColorization"
+
+Copied

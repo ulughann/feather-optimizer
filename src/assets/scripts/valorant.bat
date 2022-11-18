@@ -1,0 +1,5 @@
+bcdedit /deletevalue nx
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\valorant.exe" /v "MitigationOptions" /t REG_BINARY /d "000000000001000000000000000000000000000000000000" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\valorant-win64-shipping.exe" /v "MitigationOptions" /t REG_BINARY /d "000000000001000000000000000000000000000000000000" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgc.exe" /v "MitigationOptions" /t REG_BINARY /d "000000000001000000000000000000000000000000000000" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgtray.exe" /v "MitigationOptions" /t REG_BINARY /d "000000000001000000000000000000000000000000000000" /f
