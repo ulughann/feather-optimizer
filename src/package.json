@@ -1,14 +1,14 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "description": "av",
+  "description": "the feather optimizer",
   "main": "views/main.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "window": {
-    "title": "10Tacles",
-    "icon": "assets/icon.png",
+    "title": "Feather",
+    "icon": "assets/images/logo.png",
     "toolbar": false,
     "width": 1366,
     "height": 768,
